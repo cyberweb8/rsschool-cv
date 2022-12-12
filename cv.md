@@ -1,4 +1,4 @@
-# Abdumalik Sharipov.
+# Abdumalik Sharipov. <img align="right" width="200" src="https://res.cloudinary.com/frontendprof/image/upload/v1670776209/resume_photo_2_v2fz0j.png">
 
     Frontend and backend developer, cyber security enthusiast.
 
