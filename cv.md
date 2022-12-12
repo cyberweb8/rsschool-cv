@@ -1,0 +1,38 @@
+# Abdumalik Sharipov.
+
+    Frontend and backend developer, cyber security enthusiast.
+
+<hr>
+
+### Contact Info
+
+- **Phone**: +998 99 929 5752
+- **E-mail**: abdumalikshareef@gmail.com
+- **[Linkedin](https://www.linkedin.com/in/abdulmalik-sharif-76609b46/)**
+- **[Github](https://github.com/cyberweb8)**
+
+### About me
+
+I have been learning frontend development for quite time on my own, even though the proccess was intermittent I can surely say I have seen so many technologies, not only in frontend technologies/tools, but also my interests intersected cloud infrastructure, devops, linux, networking, cyber security domains too.
+
+### Skills
+
+- HTML
+- CSS(Bootstrap, SCSS, Tailwind, Material UI)
+- Javascript
+- Reactjs
+- Nextjs
+- Version Control System: Github, Gitlab.
+- OS: Windows, Linux(Centos8, Ubuntu, a bit Kali:))
+- Code Editors: VSCode, Sublime, Atom
+
+<hr>
+
+
+### Code Examples
+
+### Experience
+
+### Educaton
+
+<hr>
