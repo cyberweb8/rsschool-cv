@@ -70,8 +70,8 @@ hrefEls.forEach((link) => {
 - Russian
 - Spanish
 
-  ![Spanish](https://res.cloudinary.com/frontendprof/image/upload/v1670500976/duo_ki63j0)
+  ![Spanish](https://res.cloudinary.com/frontendprof/image/upload/v1670500976/duo_ki63j0.png)
 
 - English
 
-  ![English](https://res.cloudinary.com/frontendprof/image/upload/v1670500975/exam_lxawg1)
+  ![English](https://res.cloudinary.com/frontendprof/image/upload/v1670500975/exam_lxawg1.png)
