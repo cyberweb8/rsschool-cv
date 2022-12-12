@@ -62,3 +62,16 @@ hrefEls.forEach((link) => {
 ### Educaton
 
 <hr>
+
+
+### Languages
+
+- Uzbek
+- Russian
+- Spanish
+
+  ![Spanish](https://res.cloudinary.com/frontendprof/image/upload/v1670500976/duo_ki63j0)
+
+- English
+
+  ![English](https://res.cloudinary.com/frontendprof/image/upload/v1670500975/exam_lxawg1)
