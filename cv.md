@@ -29,7 +29,33 @@ I have been learning frontend development for quite time on my own, even though 
 <hr>
 
 
+
 ### Code Examples
+
+> A code that executes moving to specific section upon click
+
+```
+const hrefEls = document.querySelectorAll('a:link');
+
+hrefEls.forEach((link) => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+
+    if (href === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+    if (href !== '#' && href.startsWith('#')) {
+      const els = document.querySelector(href);
+      els.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+
+```
 
 ### Experience
 
