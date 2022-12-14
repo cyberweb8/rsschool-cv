@@ -48,6 +48,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins";
   font-weight: 400;
@@ -66,4 +70,35 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 18px;
+
+  transition: all 0.8s linear;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: darkcyan;
+}
+
+.nav-link:is(:hover, :focus) {
+  background-color: darkcyan;
+  color: white;
+  border-radius: 1rem;
 }
