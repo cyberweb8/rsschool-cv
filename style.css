@@ -62,23 +62,45 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* background-color: lightblue; */
+  background-color: lightgray;
 }
 
 .header {
-  background-color: rgb(172, 201, 201);
+  background-color: #142440;
+
   position: sticky;
   width: 100%;
   top: 0;
   margin-bottom: 5rem;
   z-index: 10;
+  border-bottom: 2px solid gold;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 3em;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profile {
+  text-decoration: none;
+}
+
+.coder {
+  color: white;
+  text-decoration: none;
+}
+
+.coder span {
+  color: #ff4a44;
 }
 
 .nav-list {
@@ -103,11 +125,11 @@ body {
 
 .nav-link:link,
 .nav-link:visited {
-  color: darkcyan;
+  color: #ff4a44;
 }
 
 .nav-link:is(:hover, :focus) {
-  background-color: darkcyan;
+  background-color: #ff4a44;
   color: white;
   border-radius: 1rem;
 }
@@ -174,8 +196,26 @@ body {
   color: teal;
 }
 
+/* contacts */
+.contact__link:link,
+.contact__link:visited {
+  color: #142440;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contact__link:link span,
+.contact__link:visited span {
+  color: #4d2323;
+}
+
 .footer {
-  background-color: rgb(172, 201, 201);
+  background-color: #142440;
+  color: white;
+  border-top: 2px solid gold;
 
   width: 100%;
   padding: 1rem;
