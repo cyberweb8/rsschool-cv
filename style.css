@@ -6,8 +6,14 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Thin.ttf");
-  font-weight: 100;
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
 }
 
 * {
@@ -34,8 +40,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  /* border: 1px solid red; */
-  /* background-color: lightblue; */
   background-color: lightgray;
 }
 
@@ -92,18 +96,44 @@ body {
   line-height: 50px;
   font-size: 18px;
 
-  transition: all 0.8s linear;
+  position: relative;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  color: #ff4a44;
+  color: white;
 }
 
-.nav-link:is(:hover, :focus) {
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
   background-color: #ff4a44;
-  color: white;
-  border-radius: 1rem;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-mobile-nav {
+  background-color: none;
+  cursor: pointer;
+
+  /* display: none; */
+}
+
+.icon-mobile-nav {
+  height: 2rem;
+  width: 2rem;
+  color: #000;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
 }
 
 .main-container {
@@ -153,19 +183,16 @@ body {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #829985;
 }
 
 .subtitle {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-weight: 100;
+  font-weight: 400;
   color: teal;
+  font-family: "Montserrat";
 }
 
 /* contacts */
@@ -176,7 +203,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
 }
 
 .contact__link:link span,
@@ -186,29 +212,27 @@ body {
 
 /* skills */
 .skills__list {
-  font-size: 1.3rem;
   padding-left: 3rem;
 }
 
 /* code */
-.snippet img {
-  width: 100%;
+.snippet {
+  background-color: #829985;
+  color: #4d2323;
+  padding: 0 1rem;
+  border-radius: 3px;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 /* courses */
 .courses__list {
-  font-size: 1.3rem;
   padding-left: 3rem;
-}
-
-/* education */
-.uni {
-  font-size: 1.3rem;
 }
 
 /* projects */
 .projects__list {
-  font-size: 1.3rem;
   padding-left: 3rem;
 }
 
@@ -242,7 +266,50 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1em;
+  }
   .section {
     width: 100%;
+  }
+
+  .wrapper .coder {
+    display: none;
+  }
+
+  .nav-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 0 15px;
+    line-height: 35px;
+    font-size: 0.85em;
+  }
+
+  h1.section-title {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+
+  .section-title,
+  .subtitle {
+    font-size: 1em;
+  }
+
+  #profile img {
+    display: none;
+  }
+
+  .title-info .section-title::after {
+    width: 85px;
+    height: 3px;
+    bottom: 35%;
+    left: 35%;
+  }
+
+  .snippet {
+    font-size: 0.6em;
   }
 }
