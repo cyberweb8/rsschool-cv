@@ -212,6 +212,40 @@ body {
   color: #4d2323;
 }
 
+/* skills */
+.skills__list {
+  font-size: 1.3rem;
+  padding-left: 3rem;
+}
+
+/* code */
+.snippet img {
+  width: 100%;
+}
+
+/* courses */
+.courses__list {
+  font-size: 1.3rem;
+  padding-left: 3rem;
+}
+
+/* education */
+.uni {
+  font-size: 1.3rem;
+}
+
+/* projects */
+.projects__list {
+  font-size: 1.3rem;
+  padding-left: 3rem;
+}
+
+.projects__link:link,
+.projects__link:visited {
+  text-decoration: none;
+  color: #4d2323;
+}
+
 .footer {
   background-color: #142440;
   color: white;
