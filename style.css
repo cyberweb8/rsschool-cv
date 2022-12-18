@@ -68,7 +68,7 @@ body {
 
 .header {
   background-color: rgb(172, 201, 201);
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   margin-bottom: 5rem;
@@ -172,7 +172,27 @@ body {
   overflow: hidden;
   font-weight: 100;
   color: teal;
-  background-color: rgb(77, 35, 35, 0.8);
+}
+
+.footer {
+  background-color: rgb(172, 201, 201);
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 60%;
 }
 
 @media (max-width: 768px) {
