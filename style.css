@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4d2323;
+
+  font-family: "Poppins";
+  font-weight: 400;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: lightgray;
+}
+
+.header {
+  background-color: #142440;
+
+  position: sticky;
+  width: 100%;
+  top: 0;
+  margin-bottom: 5rem;
+  z-index: 10;
+  border-bottom: 2px solid gold;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3em;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profile {
+  text-decoration: none;
+}
+
+.coder {
+  color: white;
+  text-decoration: none;
+}
+
+.coder span {
+  color: #ff4a44;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 18px;
+
+  position: relative;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #ff4a44;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-mobile-nav {
+  background-color: none;
+  cursor: pointer;
+
+  /* display: none; */
+}
+
+.icon-mobile-nav {
+  height: 2rem;
+  width: 2rem;
+  color: #000;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.section {
+  width: 50%;
+  padding: 0 1em;
+}
+
+#profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 50vh;
+}
+
+#profile img {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.title-info {
+  text-align: center;
+  position: relative;
+}
+
+.title-info .section-title {
+  color: #4d2323;
+  font-size: 1.5em;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.title-info .section-title::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 3px;
+  background-color: #829985;
+  bottom: 55%;
+  left: 45%;
+}
+
+.section-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #829985;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: teal;
+  font-family: "Montserrat";
+}
+
+/* contacts */
+.contact__link:link,
+.contact__link:visited {
+  color: #142440;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact__link:link span,
+.contact__link:visited span {
+  color: #4d2323;
+}
+
+/* skills */
+.skills__list {
+  padding-left: 3rem;
+}
+
+/* code */
+.snippet {
+  background-color: #829985;
+  color: #4d2323;
+  padding: 0 1rem;
+  border-radius: 3px;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+/* courses */
+.courses__list {
+  padding-left: 3rem;
+}
+
+/* projects */
+.projects__list {
+  padding-left: 3rem;
+}
+
+.projects__link:link,
+.projects__link:visited {
+  text-decoration: none;
+  color: #4d2323;
+}
+
+.footer {
+  background-color: #142440;
+  color: white;
+  border-top: 2px solid gold;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1em;
+  }
+  .section {
+    width: 100%;
+  }
+
+  .wrapper .coder {
+    display: none;
+  }
+
+  .nav-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 0 15px;
+    line-height: 35px;
+    font-size: 0.85em;
+  }
+
+  h1.section-title {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+
+  .section-title,
+  .subtitle {
+    font-size: 1em;
+  }
+
+  #profile img {
+    display: none;
+  }
+
+  .title-info .section-title::after {
+    width: 85px;
+    height: 3px;
+    bottom: 35%;
+    left: 35%;
+  }
+
+  .snippet {
+    font-size: 0.6em;
+  }
+}
