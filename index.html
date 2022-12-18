@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Abdumalik Sharipov &mdash; Portfolio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="coder"> rsSchool <span>Coder</span> </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link">Contacts</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#courses" class="nav-link">Courses</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#languages" class="nav-link">languages</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-container">
+          <!-- profile -->
+          <section id="profile" class="section">
+            <div class="title-info">
+              <h1 class="section-title">Abdumalik Sharipov</h1>
+              <h2 class="subtitle">Frontend developer and cyber enthusiast</h2>
+            </div>
+            <img src="assets/img/resume_photo_1.png" alt="my photo" />
+          </section>
+
+          <!-- contacts -->
+          <section id="contacts" class="section">
+            <h2 class="section-title">My contacts</h2>
+
+            <div class="contact__items">
+              <a
+                href="https://github.com/cyberweb8"
+                class="contact__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>github.com/cyberweb8</span>
+              </a>
+            </div>
+
+            <div class="contact__items">
+              <a
+                href="https://t.me/abdsha8"
+                class="contact__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-telegram"></i>
+                <span>t.me/abdsha8</span>
+              </a>
+            </div>
+
+            <div class="contact__items">
+              <a
+                href="mailto:abdumaliksharipov@gmail.com"
+                class="contact__link"
+                target="_blank"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <span>abdumaliksharipov@gmail.com</span>
+              </a>
+            </div>
+
+            <div class="contact__items">
+              <a
+                href=" https://www.linkedin.com/in/abdulmalik-sharif-76609b46/"
+                class="contact__link"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <span>My Linkedin</span>
+              </a>
+            </div>
+
+            <div class="contact__items">
+              <a
+                href="https://yandex.uz/maps/geo/771270945/?ll=67.281627%2C37.225269&z=13.14"
+                class="contact__link"
+                target="_blank"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Termez, Uzbekistan</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- summary -->
+          <section id="summary" class="section">
+            <h2 class="section-title">The summary</h2>
+            <p>
+              I have been learning frontend development for quite time on my
+              own, even though the proccess was intermittent I can surely say I
+              have seen so many technologies, not only in frontend
+              technologies/tools, but also my interests intersected cloud
+              infrastructure, devops, linux, networking, cyber security domains
+              too.
+            </p>
+          </section>
+
+          <!-- skills -->
+          <section id="skills" class="section">
+            <h2 class="section-title">My skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">Bootsrap</li>
+              <li class="skills__item">Material UI</li>
+              <li class="skills__item">Tailwind</li>
+              <li class="skills__item">Wordpress</li>
+              <li class="skills__item">Javascript</li>
+              <li class="skills__item">React</li>
+              <li class="skills__item">Nextjs</li>
+            </ul>
+          </section>
+
+          <!-- code -->
+          <section id="code" class="section">
+            <h2 class="section-title">code I wrote</h2>
+            <pre class="snippet">
+
+              <code>
+const hrefEls = document.querySelectorAll('a:link');
+
+hrefEls.forEach((link) => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+
+    if (href === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+    if (href !== '#' && href.startsWith('#')) {
+      const els = document.querySelector(href);
+      els.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+              </code>
+
+            </pre>
+          </section>
+
+          <!-- courses -->
+          <section id="courses" class="section">
+            <h2 class="section-title">courses informations</h2>
+            <ul class="courses__list">
+              <li class="courses__item">
+                The Complete Cyber Security Course : Hackers Exposed!
+              </li>
+              <li class="courses__item">The Ultimate Flask Course</li>
+              <li class="courses__item">
+                Materialize CSS From Scratch With 5 Projects
+              </li>
+              <li class="courses__item">
+                Modern HTML & CSS From The Beginning
+              </li>
+              <li class="courses__item">
+                The Web Developer Bootcamp 2022(Udemy)
+              </li>
+              <li class="courses__item">Modern React with Redux</li>
+            </ul>
+          </section>
+
+          <!-- projects -->
+          <section id="projects" class="section">
+            <h2 class="section-title">projects informations</h2>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <a
+                  target="_blank"
+                  href="https://cyberweb8.github.io/react-bmi/"
+                  class="projects__link"
+                >
+                  Mass Index Calculator
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a
+                  target="_blank"
+                  href="https://react-myreal-estate.netlify.app/"
+                  class="projects__link"
+                >
+                  Realtor Clone
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a
+                  target="_blank"
+                  href="https://verstka-gaming-1.netlify.app/"
+                  class="projects__link"
+                >
+                  Gaming site clone
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a
+                  target="_blank"
+                  href="https://omnifood-abdumalik.netlify.app/"
+                  class="projects__link"
+                >
+                  Healthy Meal Project
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a
+                  target="_blank"
+                  href="https://kamolot.netlify.app/"
+                  class="projects__link"
+                >
+                  Education website
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- education -->
+          <section id="education" class="section">
+            <h2 class="section-title">education informations</h2>
+            <p class="uni">
+              University of World Economy and Diplomacy (2007-2015)
+            </p>
+          </section>
+
+          <!-- languages -->
+          <section id="languages" class="section">
+            <h2 class="section-title">languages informations</h2>
+            <ul class="lan__list">
+              <li class="lan__item">Uzbek</li>
+              <li class="lan__item">Russian</li>
+              <li class="lan__item">English (C- from EPAM Test Assessment)</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="logo logo__rsschool">
+            <a href="https://rs.school/js" target="_blank">
+              <img src="assets/svg/rs_school.svg" alt="rs_school logo" />
+            </a>
+          </div>
+          <div class="date">
+            <p class="year">&copy; Abdumalik Sharipov, 2022</p>
+          </div>
+          <div class="logo logo__github">
+            <a href="https://github.com/cyberweb8" target="_blank">
+              <img src="assets/svg/icons8-github.svg" alt="github logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
